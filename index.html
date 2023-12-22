@@ -15,10 +15,22 @@
         <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-        <h1>
+<body class="d-flex justify-content-center flex-column align-items-center">
+        <h1 :class="bg" class="rounded-4 px-3">
                 Vue vi augura: {{ text }}
-            </h1>
+        </h1>
+
+        <div class="row">
+                <div class="col">
+                        <img :src="imgTree" alt="albero-Natale" :class="classes">
+                </div>
+                <div class="col">
+                        <img :src="imgCat" alt="gatto-Natale" :class="classes">
+                </div>
+                <div class="col">
+                        <img :src="imgTree" alt="albero-Natale" :class="classes">
+                </div>
+        </div>
 
         <!-- BOOTSTRAP JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

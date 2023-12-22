@@ -6,7 +6,12 @@
 }
 
 /* GENERAL */
-
+body {
+    background-color: rgb(6, 90, 6);
+}
+img {
+    max-width: 30vw;
+}
 
 
 /* HEADER */
